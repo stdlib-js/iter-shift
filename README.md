@@ -34,30 +34,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/iter-shift
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var iterShift = require( '@stdlib/iter-shift' );
+iterShift = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@umd/browser.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.iterShift;
+})();
+</script>
 ```
 
 #### iterShift( iterator\[, clbk\[, thisArg]] )
@@ -176,9 +178,14 @@ bool = ( ctx.count === 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-iter-randu' );
-var iterShift = require( '@stdlib/iter-shift' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
@@ -198,6 +205,11 @@ while ( true ) {
     }
     console.log( v.value );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -301,11 +313,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/pop]: https://github.com/stdlib-js/iter-pop
+[@stdlib/iter/pop]: https://github.com/stdlib-js/iter-pop/tree/umd
 
-[@stdlib/iter/slice]: https://github.com/stdlib-js/iter-slice
+[@stdlib/iter/slice]: https://github.com/stdlib-js/iter-slice/tree/umd
 
-[@stdlib/iter/unshift]: https://github.com/stdlib-js/iter-unshift
+[@stdlib/iter/unshift]: https://github.com/stdlib-js/iter-unshift/tree/umd
 
 <!-- </related-links> -->
 
