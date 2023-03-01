@@ -220,9 +220,9 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/iter/pop`][@stdlib/iter/pop]</span><span class="delimiter">: </span><span class="description">create an iterator which skips the last value of a provided iterator.</span>
--   <span class="package-name">[`@stdlib/iter/slice`][@stdlib/iter/slice]</span><span class="delimiter">: </span><span class="description">create an iterator which returns a subsequence of iterated values from a provided iterator.</span>
--   <span class="package-name">[`@stdlib/iter/unshift`][@stdlib/iter/unshift]</span><span class="delimiter">: </span><span class="description">create an iterator which prepends values to the beginning of a provided iterator.</span>
+-   <span class="package-name">[`@stdlib/iter-pop`][@stdlib/iter/pop]</span><span class="delimiter">: </span><span class="description">create an iterator which skips the last value of a provided iterator.</span>
+-   <span class="package-name">[`@stdlib/iter-slice`][@stdlib/iter/slice]</span><span class="delimiter">: </span><span class="description">create an iterator which returns a subsequence of iterated values from a provided iterator.</span>
+-   <span class="package-name">[`@stdlib/iter-unshift`][@stdlib/iter/unshift]</span><span class="delimiter">: </span><span class="description">create an iterator which prepends values to the beginning of a provided iterator.</span>
 
 </section>
 
