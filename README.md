@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/iter-shift
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterShift = require( '@stdlib/iter-shift' );
+import iterShift from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@esm/index.mjs';
 ```
 
 #### iterShift( iterator\[, clbk\[, thisArg]] )
@@ -76,7 +60,7 @@ var iterShift = require( '@stdlib/iter-shift' );
 Returns an [iterator][mdn-iterator-protocol] which skips the first value of a provided [`iterator`][mdn-iterator-protocol].
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var it = iterShift( array2iterator( [ 1, 2, 3, 4 ] ) );
 // returns <Object>
@@ -102,7 +86,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 To invoke a callback upon skipping the first value of a provided [`iterator`][mdn-iterator-protocol], provide a `clbk` argument.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 function onShift( v ) {
     console.log( v );
@@ -134,7 +118,7 @@ To set the callback execution context, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 function onShift() {
     this.count += 1;
@@ -187,9 +171,14 @@ bool = ( ctx.count === 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-iter-randu' );
-var iterShift = require( '@stdlib/iter-shift' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
+import iterShift from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
@@ -209,6 +198,10 @@ while ( true ) {
     }
     console.log( v.value );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -248,7 +241,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -312,11 +305,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/pop]: https://github.com/stdlib-js/iter-pop
+[@stdlib/iter/pop]: https://github.com/stdlib-js/iter-pop/tree/esm
 
-[@stdlib/iter/slice]: https://github.com/stdlib-js/iter-slice
+[@stdlib/iter/slice]: https://github.com/stdlib-js/iter-slice/tree/esm
 
-[@stdlib/iter/unshift]: https://github.com/stdlib-js/iter-unshift
+[@stdlib/iter/unshift]: https://github.com/stdlib-js/iter-unshift/tree/esm
 
 <!-- </related-links> -->
 
