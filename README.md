@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterShift from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@deno/mod.js';
+import iterShift from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@v0.2.3-deno/mod.js';
 ```
 
 #### iterShift( iterator\[, clbk\[, thisArg]] )
@@ -173,7 +173,7 @@ bool = ( ctx.count === 1 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterShift from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@deno/mod.js';
+import iterShift from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-shift@v0.2.3-deno/mod.js';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
